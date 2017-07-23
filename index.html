@@ -1,0 +1,46 @@
+.wrapper
+
+    .cuboid#cuboid
+        .holder#holderRotation1
+          .front.ract#front
+          .back.ract#back
+          .left.square#left
+          .right.square#right
+          .top.ract
+          .bottom.ract
+
+    section.editBar
+        .color
+            h2 faces
+            
+            .frontC front face 
+            input#frontC(type='color')
+            
+            .backC back face 
+            input#backC(type='color')
+            
+            .leftC left face 
+            input#leftC(type='color')
+            
+            .rightC right face 
+            input#rightC(type='color')
+            
+        .background
+            h2 BG
+            input#bg(type='color')
+        .duration
+            h2 duration
+            input#duration(type='text')
+            label.s sec
+        .rotation
+            h2 rotation
+            .label right
+            input#right(type='radio' name='rotation' onclick='rotation(this.id)')
+            br
+            .label left
+            input#left(type='radio' checked='checked' name='rotation' onclick='rotation(this.id)')
+    section.done  
+        #faces(onclick='faces()') done
+        #background(onclick='bg()') done
+        #duration(onclick='duration()') done
+        #rotation() done
